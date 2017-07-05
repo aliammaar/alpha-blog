@@ -4,9 +4,8 @@
 
   		
 	<ul>
-		<h3>The following errors prevented the data to be saved.</h3>
-
 		<% @article.errors.full_messages.each do |msg| %>
+		<h3>The following errors prevented the data to be saved.</h3>
 
 		<li><%= msg %></li>
 		<% end %>
@@ -29,3 +28,5 @@
 		<%= f.submit  %>
 	</p>
 <% end %>
+
+<%= link_to "Back to Article listing", articles_path%>
