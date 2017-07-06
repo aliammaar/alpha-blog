@@ -10,9 +10,10 @@
 
   <body>
 
+  		<%= render 'layouts/navigation'%>
+
   		<% flash.each do |name, msg| %>
 
-  		<h3>The following errors prevented the data to be saved.</h3>
   		<ul>
   			<li><%= msg %></li>
   		</ul>
