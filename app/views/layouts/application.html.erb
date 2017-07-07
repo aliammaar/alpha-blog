@@ -13,13 +13,14 @@
   		<%= render 'layouts/navigation'%>
 
   		<% flash.each do |name, msg| %>
-
   		<ul>
   			<li><%= msg %></li>
   		</ul>
+  		<% end %>
 
-  		<% end %> 
-
+<div class="container">
     <%= yield %>
+</div>
+<%= render 'layouts/footer'%> 
   </body>
 </html>
